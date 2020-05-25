@@ -19,7 +19,8 @@ public class Test_Steps {
 	
 	@Given("User is on Home page")
 	public void user_is_on_Home_page() throws Throwable {
-		System.setProperty("webdriver.ie.driver", "D:\\IEDriverServer.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\2\\chromedriver_win32\\chromedriver81.exe");
+		driver= new ChromeDriver();
 		  		
 		  /*DesiredCapabilities capability = new DesiredCapabilities();
 		  capability.setCapability("binary","C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
@@ -28,7 +29,7 @@ public class Test_Steps {
 		 
 															
 		
-		  driver= new InternetExplorerDriver();
+		  
 		  
 		  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		  
